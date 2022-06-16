@@ -1,6 +1,6 @@
 # Security
 
-For full security process refer to rentable-security [repo](https://github.com/rentable-world/rentable-security/blob/master/SECURITY.md).
+For full security process refer to rentable-security [repo](https://github.com/rentable-world/rentable-security/blob/main/SECURITY.md).
 
 ## Scope
 
