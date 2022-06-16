@@ -1,0 +1,14 @@
+{
+  "solidity.remappings": [
+    "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "solmate/=lib/solmate/src/",
+    "ds-test/=lib/ds-test/src/"
+  ],
+  "editor.formatOnSave": true,
+  "solidity.formatter": "prettier",
+  "[solidity]": {
+    "editor.defaultFormatter": "JuanBlanco.solidity"
+  },
+  "python.formatting.provider": "black"
+}

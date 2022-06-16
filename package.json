@@ -1,0 +1,41 @@
+{
+  "name": "rentable-protocol",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rentable-world/rentable-protocol.git",
+  "author": "Emiliano Bonassi <emiliano@rentable.world>",
+  "license": "MIT",
+  "scripts": {
+    "network:testnet": "ganache-cli",
+    "network:mainnet-fork": "hardhat node",
+    "deploy:testnet": "brownie run deploy_testnet",
+    "mintNFT": "brownie run mintNFT",
+    "console": "brownie console",
+    "test": "forge test --gas-report -vvv",
+    "slither": "python3 -m venv .venv && .venv/bin/python -m pip install slither-analyzer && .venv/bin/python -m slither .",
+    "format:check:sol": "prettier --check '**/*.*(sol|json)'",
+    "format:check:py": "black --check --include '(tests|scripts)' .",
+    "format:check": "yarn format:check:sol && yarn format:check:py",
+    "format:fix:sol": "pretty-quick --pattern '**/*.*(sol|json)' --verbose",
+    "format:fix:py": "black --include '(tests|scripts)' .",
+    "format:fix": "yarn format:fix:sol && yarn format:fix:py",
+    "hint": "solhint \"contracts/**/*.sol\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@openzeppelin/contracts": "4.4.2",
+    "@openzeppelin/contracts-upgradeable": "4.4.2",
+    "dotenv": "^10.0.0",
+    "ganache-cli": "^6.12.2",
+    "hardhat": "2.9.3",
+    "husky": "^7.0.4",
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "pretty-quick": "^3.1.1",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "^0.0.5"
+  },
+  "dependencies": {}
+}
