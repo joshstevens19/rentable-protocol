@@ -13,7 +13,7 @@
     "console": "brownie console",
     "test": "forge test --gas-report -vvv",
     "slither": "python3 -m venv .venv && .venv/bin/python -m pip install slither-analyzer && .venv/bin/python -m slither .",
-    "format:check:sol": "prettier --check '**/*.*(sol|json)'",
+    "format:check:sol": "prettier --check '**/*.*(sol)'",
     "format:check:py": "black --check --include '(tests|scripts)' .",
     "format:check": "yarn format:check:sol && yarn format:check:py",
     "format:fix:sol": "pretty-quick --pattern '**/*.*(sol|json)' --verbose",
